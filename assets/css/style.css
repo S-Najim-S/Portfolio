@@ -1,0 +1,229 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+:root {
+  --header-height: 3rem;
+
+  /* _________Colors____________ */
+
+  /* change color of all the page */
+  --hue-color: 223;
+
+  --primary-color: hsl(var(--hue-color), 74%, 71%);
+  --primary-color-2: hsl(var(--hue-color), 69%, 61%);
+  --primary-color-alt: hsl(var(--hue-color), 57%, 53%);
+
+  --secondary--color: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --input-color: hsl(var(--hue-color), 8%, 65%);
+  --body-color: hsl(var(--hue-color), 70%, 96%);
+  --container-color: #fff;
+
+  /* _________font and typography___________ */
+
+  --body-font: "Poppins", sans-serif;
+
+  /* font-size: 62.5%; // 
+  1rem  = 10px;
+  10/16 = 62.5% */
+
+  font-size: 62.5%;
+
+  --big-font-size: 3.2rem;
+  --h1-font-size: 2.4rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.8rem;
+
+  --normal-font-size: 1.5rem;
+  --small-font-size: 1.3rem;
+  --smaller-font-size: 1.2rem;
+
+  /* _________font-weight__________ */
+
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* __________margin__________ */
+
+  --m-0-4: 0.4rem;
+  --m-0-8: 0.8rem;
+  --m-1-2: 1.2rem;
+  --m-1-6: 1.6rem;
+  --m-2-4: 2.4rem;
+  --m-3-2: 3.2rem;
+  --m-4-0: 4rem;
+  --m-4-8: 4.8rem;
+
+  /* ___________z-index_____________ */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 4.8rem;
+    --h1-font-size: 3.6rem;
+    --h2-font-size: 2.4rem;
+    --h3-font-size: 2rem;
+
+    --normal-font-size: 1.6rem;
+    --small-font-size: 1.4rem;
+    --smaller-font-size: 1.3rem;
+  }
+}
+
+/* _______________base_______________ */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ___________reusable css classes___________ */
+
+.section {
+  padding: 3.2rem 0 6.4rem;
+}
+.section__title {
+  font-size: var(--h1-font-size);
+}
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--m-4-8);
+}
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+.container {
+  max-width: 768px;
+  margin-left: var(--m-2-4);
+  margin-right: var(--m-2-4);
+}
+
+.grid {
+  display: grid;
+  gap: 2.4rem;
+}
+
+/* _________header_______________ */
+
+header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
+
+/* _________nav_______________ */
+.nav {
+  max-width: 968px;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__logo:hover {
+  color: var(--primary-color);
+}
+.nav__toggle {
+  font-size: 1.76rem;
+  cursor: pointer;
+}
+.nav__toggle:hover {
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 3.2rem 2.4rem 6.4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 2.4rem 2.4rem 0 0;
+    transition: 0.3s;
+  }
+
+  .nav__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+  }
+  .nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+  }
+
+  .nav__icon {
+    font-size: 1.9rem;
+  }
+
+  .nav__close {
+    position: absolute;
+    right: 2rem;
+    bottom: 0.51rem;
+    background-origin: 0.8rem;
+    font-size: 2.4rem;
+    cursor: pointer;
+    color: var(--primary-color);
+  }
+  .nav__close:hover {
+    color: var(--primary-color-alt);
+  }
+
+  /* show menu */
+  .show-menu {
+    bottom: 0;
+  }
+}
