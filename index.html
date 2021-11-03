@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,68 +9,474 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- unicons -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <!-- js -->
     <script src="assets/js/main.js" defer></script>
 
     <title>S.Najim.S</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">S.Najim.S</a>
+        <nav class="nav container">
+            <a href="#" class="nav__logo">S.Najim.S</a>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav__item">
-              <a href="#home" class="nav__link">
-                <i class="uil uil-estate nav__icon"></i>Home
-              </a>
-            </li>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
 
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="uil uil-user nav__icon"></i>About
-              </a>
-            </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
 
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="uil uil-file-info-alt nav__icon"></i>Skills
-              </a>
-            </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-info-alt nav__icon"></i>Skills
+                        </a>
+                    </li>
 
-            <li class="nav__item">
-              <a href="#services" class="nav__link">
-                <i class="uil uil-briefcase-alt nav__icon"></i>Services
-              </a>
-            </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>Portfolio</a>
+                    </li>
 
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                <i class="uil uil-scenery nav__icon"></i>Portfolio</a
-              >
-            </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-book-open"></i>Reads
+                        </a>
+                    </li>
 
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i>Contact</a
-              >
-            </li>
-          </ul>
-          <i class="uil uil-times nav__close" id="nav-close"></i>
-        </div>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact</a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
 
-        <div class="nav__btns">
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i>
-          </div>
-        </div>
-      </nav>
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
     </header>
-  </body>
+
+    <!-- main -->
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://github.com/SayedNajimullah" class="home__social-icon" target="_blank">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+
+                        <a href="https://twitter.com/SNajim1" class="home__social-icon" target="_blank">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+                        <a href="https://github.com/SayedNajimullah" class="home__social-icon" target="_blank">
+                            <i class="uil uil-dribbble"></i>
+                        </a>
+
+                        <a href="https://twitter.com/SNajim1" class="home__social-icon" target="_blank">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <img src="assets/img/hero-img.svg" alt="" />
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm Najim</h1>
+                        <h3 class="home__subtitle">Frontend developer</h3>
+                        <p class="home__description">
+                            I like to craft solid and scalable frontend products with great user experience.
+                        </p>
+
+                        <a href="#contact" class="button button-flex">
+                            Contact Me<i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button-flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle about-subtitle">What I do</span>
+
+            <div class="about__container container grid">
+                <div class="about__img">
+                    <img src="assets/img/about-img.jpg" alt="about-img" class="about__img-photo" />
+                </div>
+
+                <div class="about__data">
+                    <p class="about__description">
+                        Hi, I'm Najim Sadat, a computer science graduate, currently working freelance as a FrontEnd
+                        developer. I am a continuous learner, I love learning computer and human languages.Coding gives
+                        me a wonderful feeling of achievement and joy which I cannot explain
+                        in words.
+                    </p>
+
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">05*</span>
+                            <span class="about__info-name">speaking <br />languages </span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">2020* </span>
+                            <span class="about__info-name">University <br />graduation
+                            </span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">02*</span>
+                            <span class="about__info-name">Years<br />experience </span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download="" href="assets\pdf\CV-Najim.pdf" class="button button-flex">Download CV<i
+                                class="uil uil-import button__icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My tecnical level</span>
+
+            <div class="skills__container container">
+                <ul class="skills__container-list">
+                    <li class="skills__container-list-item">
+                        <i class="fab fa-html5"></i>
+                    </li>
+
+                    <li class="skills__container-list-item">
+                        <i class="fab fa-js-square"></i>
+                    </li>
+
+                    <li class="skills__container-list-item">
+                        <i class="fab fa-react"></i>
+                    </li>
+
+                    <li class="skills__container-list-item">
+                        <i class="fab fa-node"></i>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Qualification Section -->
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i> Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i> Work
+                    </div>
+                </div>
+
+                <!-- Qualification content one -->
+                <div class="qualification__sections">
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!-- first Qualification -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Computer Engineer</h3>
+                                <span class="qualification__subtitle">Mugla Sitki Kocman university</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calender-alt">2016 - 2020</i>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- 2nd Qualification -->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Web Design</h3>
+                                <span class="qualification__subtitle">Udemy</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i> May 2018 - August 2018
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3rd Qualification -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Web development</h3>
+                                <span class="qualification__subtitle">Udemy-codeacademy</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i> 2018 - 2019
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Qualification content Two -->
+                    <div class="qualification__content" data-content id="work">
+                        <!-- 1st Qualification -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Internship Front-end</h3>
+                                <span class="qualification__subtitle">Bitenta</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i> April 2018 - Sep 2018
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- 2nd Qualification -->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Front-end developer</h3>
+                                <span class="qualification__subtitle">Bitenta</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i> Sep 2018 - June 2020
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3rd Qualification -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Internship</h3>
+                                <span class="qualification__subtitle">Codezone</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i> June 2020 - August 2020
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- 4th Qualification -->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Freelance</h3>
+                                <span class="qualification__subtitle">Selfemployed</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i> August 2020 - Present
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">some of my works</span>
+
+            <div class="portfolio__container container">
+                <div class="portfolio__box">
+                    <div class="portfolio__box-link">
+                        <a href="https://github.com/adeolaadeoti/gudfood-restaurant" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="portfolio__box-content">
+                        <h1>Mugla<br />&nbsp;&nbsp;&nbsp;Arkadasim</h2>
+                            <h5>HTML/CSS &nbsp; PHP &nbsp; JS </h5>
+                    </div>
+
+                    <div class="portfolio__box-description">
+                        <h3>Title: Mugla Arkadasim</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus optio voluptatem omnis
+                            nam atque cum similique veritatis! Vitae rem repellendus placeat sequi minus veniam. Sint
+                            aliquid odit possimus libero iure!</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="portfolio__box">
+                    <div class="portfolio__box-link">
+                        <a href="https://github.com/SayedNajimullah/Senior-Design-Project" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://gudfood.netlify.app" target="_blank" rel="noopener noreferrer"><i
+                                class="uil uil-folder-open"></i>
+                        </a>
+                    </div>
+
+                    <div class="portfolio__box-content">
+                        <h1>Natours<br />&nbsp;&nbsp;&nbsp;Homepage</h2>
+                            <h5>HTML/SCSS &nbsp; </h5>
+                    </div>
+
+                    <div class="portfolio__box-description">
+                        <h3>Title: Mugla Arkadasim</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus optio voluptatem omnis
+                            nam atque cum similique veritatis! Vitae rem repellendus placeat sequi minus veniam. Sint
+                            aliquid odit possimus libero iure!</p>
+                    </div>
+                </div>
+
+
+                <div class="portfolio__box">
+                    <div class="portfolio__box-link">
+                        <a href="https://github.com/adeolaadeoti/gudfood-restaurant" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://gudfood.netlify.app" target="_blank" rel="noopener noreferrer"><i
+                                class="uil uil-folder-open"></i>
+                        </a>
+                    </div>
+
+                    <div class="portfolio__box-content">
+                        <h1>trillo <br />&nbsp;&nbsp;&nbsp;Booking app</h2>
+                            <h5>HTML/SCSS &nbsp; JS</h5>
+                    </div>
+                    <div class="portfolio__box-description">
+                        <h3>Title: Mugla Arkadasim</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus optio voluptatem omnis
+                            nam atque cum similique veritatis! Vitae rem repellendus placeat sequi minus veniam. Sint
+                            aliquid odit possimus libero iure!</p>
+                    </div>
+                </div>
+
+                <div class="portfolio__box">
+                    <div class="portfolio__box-link">
+                        <a href="https://github.com/adeolaadeoti/gudfood-restaurant" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://gudfood.netlify.app" target="_blank" rel="noopener noreferrer"><i
+                                class="uil uil-folder-open"></i>
+                        </a>
+                    </div>
+
+                    <div class="portfolio__box-content">
+                        <h1>Videochat<br />&nbsp;&nbsp;&nbsp;Application</h2>
+                            <h5>Android Studio &nbsp;Java</h5>
+                    </div>
+                    <div class="portfolio__box-description">
+                        <h3>Title: Mugla Arkadasim</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus optio voluptatem omnis
+                            nam atque cum similique veritatis! Vitae rem repellendus placeat sequi minus veniam. Sint
+                            aliquid odit possimus libero iure!</p>
+                    </div>
+                </div>
+
+                <div class="portfolio__box">
+                    <div class="portfolio__box-link">
+                        <a href="https://github.com/adeolaadeoti/gudfood-restaurant" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://gudfood.netlify.app" target="_blank" rel="noopener noreferrer"><i
+                                class="uil uil-folder-open"></i>
+                        </a>
+                    </div>
+
+                    <div class="portfolio__box-content">
+                        <h1>Let's note<br />&nbsp;&nbsp;&nbsp;Application</h2>
+                            <h5>Android Studio &nbsp;Java</h5>
+                    </div>
+                    <div class="portfolio__box-description">
+                        <h3>Title: Mugla Arkadasim</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus optio voluptatem omnis
+                            nam atque cum similique veritatis! Vitae rem repellendus placeat sequi minus veniam. Sint
+                            aliquid odit possimus libero iure!</p>
+                    </div>
+                </div>
+
+                <div class="portfolio__box">
+                    <div class="portfolio__box-link">
+                        <a href="https://github.com/adeolaadeoti/gudfood-restaurant" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://gudfood.netlify.app" target="_blank" rel="noopener noreferrer"><i
+                                class="uil uil-folder-open"></i>
+                        </a>
+                    </div>
+
+                    <div class="portfolio__box-content">
+                        <h1>Weather<br />&nbsp;&nbsp;&nbsp;App</h2>
+                            <h5>API &nbsp; HTML/CSS &nbsp; JS</h5>
+                    </div>
+                    <div class="portfolio__box-description">
+                        <h3>Title: Mugla Arkadasim</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus optio voluptatem omnis
+                            nam atque cum similique veritatis! Vitae rem repellendus placeat sequi minus veniam. Sint
+                            aliquid odit possimus libero iure!</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>
