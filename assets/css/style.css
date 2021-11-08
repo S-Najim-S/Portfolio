@@ -335,6 +335,13 @@ header {
   padding: 1rem 1.6rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+button:active,
+button:focus {
+  outline: none;
+  transform: translateY(1rem);
+  box-shadow: 0 1rem 1rem rgba(#000, 0.5);
 }
 
 .button:hover {
@@ -346,10 +353,18 @@ header {
   margin-left: var(--m-0-8);
   transform: 0.3s;
 }
-
+.button-white {
+  background-color: #fff;
+  color: var(--primary-color);
+  margin-bottom: var(--m-4-8);
+}
 .button-flex {
   display: inline-flex;
   align-items: center;
+}
+
+.button:active {
+  transform: translateY(2px);
 }
 
 /*+++++++++ section about +++++++++*/
@@ -592,4 +607,27 @@ header {
 .portfolio .portfolio__box:nth-child(6) {
   background-color: #90d5ec;
   background-image: linear-gradient(315deg, #90d5ec 0%, #e79195 74%);
+}
+/* ********Project section */
+.project {
+  text-align: center;
+}
+.project__bg {
+  background-color: var(--primary-color);
+  padding: 4.8rem;
+}
+.project__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--m-1-2);
+}
+.project__description {
+  margin-bottom: var(--m-2-4);
+}
+.project__title,
+.project__description {
+  color: #fff;
+}
+.project__img {
+  width: 23.2rem;
+  justify-self: center;
 }
