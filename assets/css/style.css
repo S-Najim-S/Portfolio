@@ -680,3 +680,47 @@ button:focus {
   outline: none;
   padding: 0.4rem 0.8rem 0.8rem 0;
 }
+
+/* ***************Footer */
+
+.footer {
+  padding: 3.2rem;
+}
+
+.footer__container {
+  row-gap: 4.8rem;
+}
+.footer__bg {
+  background-color: var(--primary-color);
+  padding: 2rem 0 3rem;
+}
+
+.footer__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--m-0-4);
+}
+.footer__subtitle {
+  font-size: var(--small-font-size);
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+}
+.footer__link:hover {
+  color: var(--primary-color);
+}
+.footer__social {
+  font-size: 2rem;
+  margin-right: var(--m-2-4);
+}
+.footer__social:hover {
+  color: var(--primary-color-alt);
+}
+
+.footer__copy {
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  color: var(--text-color-light);
+  margin-top: var(--m-4-0);
+}
