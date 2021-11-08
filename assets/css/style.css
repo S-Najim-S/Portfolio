@@ -13,7 +13,7 @@
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 70%);
-  --input-color: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 45%, 83%);
   --body-color: hsl(var(--hue-color), 70%, 96%);
   --container-color: #fff;
   /* _________font and typography___________ */
@@ -358,6 +358,9 @@ button:focus {
   color: var(--primary-color);
   margin-bottom: var(--m-4-8);
 }
+.button-white:hover {
+  background-color: whitesmoke;
+}
 .button-flex {
   display: inline-flex;
   align-items: center;
@@ -630,4 +633,50 @@ button:focus {
 .project__img {
   width: 23.2rem;
   justify-self: center;
+}
+
+/* *********************Contact Me */
+
+.contact__container {
+  row-gap: 3rem;
+}
+.contact__information {
+  display: flex;
+  margin-bottom: var(--m-3-2);
+}
+.contact__icon {
+  font-size: 3.2rem;
+  color: var(--primary-color);
+  margin-right: var(--m-1-2);
+}
+.contact__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+.contact__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+.contact__content {
+  background-color: var(--input-color);
+  border-radius: 0.8rem;
+  padding: 1.2rem 1.6rem 0.4rem;
+}
+.contact__label {
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+}
+.contact__label {
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
+.contact__input {
+  width: 100%;
+  background-color: var(--input-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  padding: 0.4rem 0.8rem 0.8rem 0;
 }
