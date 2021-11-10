@@ -15,6 +15,8 @@
   --text-color-light: hsl(var(--hue-color), 15%, 82%);
   --input-color: hsl(var(--hue-color), 45%, 83%);
   --body-color: hsl(var(--hue-color), 70%, 96%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
   --container-color: #fff;
   /* _________font and typography___________ */
   --body-font: "Poppins", sans-serif;
@@ -121,13 +123,15 @@ img {
 /* ********dark-theme variables */
 
 body.dark-theme {
-  --hue-color: 223;
+  --hue-color: 230;
   --primary-color-dark: hsl(var(--hue-color), 30%, 8%);
   --title-color: hsl(var(--hue-color), 8%, 95%);
-  --text-color: hsl(var(--hue-color), 8%, 75%);
   --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --body-color: hsl(var(--hue-color), 0%, 12%);
   --container-color: hsl(var(--hue-color), 29%, 16%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --text-color-light: hsl(var(--hue-color), 15%, 82%);
 }
 
 /* ___________reusable css classes___________ */
@@ -189,6 +193,9 @@ header {
 .change-theme:hover {
   color: var(--primary-color);
 }
+.theme-icon {
+  font-size: 1.8rem;
+}
 
 .nav {
   max-width: 968px;
@@ -209,7 +216,7 @@ header {
 }
 
 .nav__toggle {
-  font-size: 1.76rem;
+  font-size: 1.8rem;
   cursor: pointer;
 }
 
@@ -790,4 +797,59 @@ button:focus {
 
 .show-scroll {
   bottom: 5rem;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 1rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: 0.8rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.8rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(155, 158, 161);
+}
+
+/******************** Media Quries small device*/
+@media screen and (max-width: 250px) {
+  .container {
+    margin-left: var(--m-1-6);
+    margin-right: var(--m-1-6);
+  }
+
+  .nav__menu {
+    padding: 3.2rem 0.25rem 4rem;
+  }
+  .nav__list {
+    column-gap: 0;
+  }
+  .home__content {
+    grid-template-columns: 0.25fr 3fr;
+  }
+  .skills__title {
+    font-size: var(--normal-font-size);
+  }
+  .qualification__data {
+    gap: 0.5rem;
+  }
+  .project__img {
+    width: 20rem;
+  }
+}
+/******************** Media Quries medium device*/
+
+@media screen and (min-width: 568px) {
+  .home__content {
+    grid-template-columns: max-content 1fr 1fr;
+  }
+  .home__data {
+    grid-column: initial;
+  }
+  .home__img {
+    order: 1;
+    justify-self: center;
+  }
 }
