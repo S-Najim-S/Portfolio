@@ -102,3 +102,43 @@ function scrollUp() {
   }
 }
 window.addEventListener("scroll", scrollUp);
+
+// Dark-light-theme
+
+const themeButton = document.getElementById("theme-button");
+const darkTheme = "dark-theme";
+const iconTheme = "bx-sun";
+
+// previously selected topic( if user selected)
+
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+
+// we Obtain the current theme that the iterface has by calidating the dark-theme class
+const getCurrentTheme = () =>
+  document.body.classList.contains(darkTheme) ? "dark" : " light";
+const getCurrentIcon = () =>
+  themeButton.classList.contains(iconTheme) ? "bx-moon" : "bx-sun";
+
+// Validate if the user previously chose a topic
+
+if (selectedTheme) {
+  // validation is completed, ask what the issue was to know if we activated or deactivated the dark
+
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === "bx-moon" ? "addd" : "remove"](
+    iconTheme
+  );
+}
+
+// active / deactive the theme manually
+
+themeButton.addEventListener("click", () => {
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});

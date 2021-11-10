@@ -118,6 +118,18 @@ img {
   height: auto;
 }
 
+/* ********dark-theme variables */
+
+body.dark-theme {
+  --hue-color: 223;
+  --primary-color-dark: hsl(var(--hue-color), 30%, 8%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --container-color: hsl(var(--hue-color), 29%, 16%);
+}
+
 /* ___________reusable css classes___________ */
 
 .section {
@@ -161,7 +173,22 @@ header {
   background-color: var(--body-color);
 }
 
-/* _________nav_______________ */
+/*_________nav_________*/
+
+.nav__btns {
+  display: flex;
+  align-items: center;
+}
+
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--m-1-6);
+  cursor: pointer;
+}
+.change-theme:hover {
+  color: var(--primary-color);
+}
 
 .nav {
   max-width: 968px;
