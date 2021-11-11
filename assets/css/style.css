@@ -841,7 +841,7 @@ button:focus {
 }
 /******************** Media Quries medium device*/
 
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 575px) {
   .home__content {
     grid-template-columns: max-content 1fr 1fr;
   }
@@ -851,5 +851,31 @@ button:focus {
   .home__img {
     order: 1;
     justify-self: center;
+  }
+  .about__container,
+  .skills__container,
+  .portfolio__container,
+  .project__container,
+  .contact__container,
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about__img {
+    margin-bottom: 14rem;
+    margin-right: 2rem;
+  }
+  .about__img img {
+    max-width: 95%;
+  }
+  .about__img::before {
+    content: "";
+    height: 100%;
+    width: 95%;
+    margin-right: 0.5rem;
+  }
+  .qualification__sections {
+    display: grid;
+    grid-template-columns: 0.6fr;
+    justify-content: center;
   }
 }
