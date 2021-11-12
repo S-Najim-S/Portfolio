@@ -149,7 +149,7 @@ const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
   duration: 2500,
-  delay: 200,
+  delay: 100,
   // reset: true
 });
 sr.reveal(".home, .skills ,.section__title, .section__subtitle ");
