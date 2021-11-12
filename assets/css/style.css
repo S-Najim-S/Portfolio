@@ -8,7 +8,7 @@
   --hue-color: 223;
   --primary-color: hsl(var(--hue-color), 74%, 71%);
   --primary-color-2: hsl(var(--hue-color), 69%, 61%);
-  --primary-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --primary-color-alt: hsl(var(--hue-color), 57%, 45%);
   --secondary--color: hsl(var(--hue-color), 92%, 85%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
@@ -492,14 +492,128 @@ button:focus {
 
 /*+++++++++ section skills +++++++++*/
 
-.skills__container-list {
+.skills__container {
+  row-gap: 0;
+}
+.skills__header {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: var(--m-4-0);
+}
+.skills__icon,
+.skills__arrow {
+  font-size: 3.2rem;
+  color: var(--primary-color);
 }
 
-.skills__container-list-item {
-  font-size: 5rem;
-  color: var(--primary-color);
+.skills__icon {
+  margin-right: var(--m-1-2);
+}
+
+.skills__titles {
+  font-size: var(--h3-font-size);
+}
+
+.skills__arrow {
+  margin-left: auto;
+  transition: 0.4s;
+}
+.skills__list {
+  row-gap: 3.4rem;
+  padding-left: 4.4rem;
+}
+
+.skills__titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--m-0-8);
+}
+
+.skills__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+.skills__bar,
+.skills__percentage {
+  height: 0.8rem;
+  border-radius: 0.25rem;
+}
+.skills__bar {
+  background-color: var(--primary-color);
+}
+.skills__percentage {
+  display: block;
+  background-color: var(--primary-color-alt);
+}
+/* frontend skills */
+.skills__html {
+  width: 90%;
+}
+
+.skills__css {
+  width: 80%;
+}
+
+.skills__js {
+  width: 75%;
+}
+
+.skills__react {
+  width: 85%;
+}
+/* backend skills */
+.skills__php {
+  width: 70%;
+}
+.skills__node {
+  width: 60%;
+}
+.skills__android {
+  width: 55%;
+}
+.skills__java {
+  width: 65%;
+}
+.skills__python {
+  width: 55%;
+}
+/* Design Skills */
+.skills__xd {
+  width: 70%;
+}
+.skills__figma {
+  width: 60%;
+}
+/* Speaking languages */
+
+.skills__pr {
+  width: 95%;
+}
+.skills__en {
+  width: 75%;
+}
+.skills__tr {
+  width: 90%;
+}
+.skills__ur {
+  width: 70%;
+}
+.skills__de {
+  width: 50%;
+}
+
+.skills__close .skills__list {
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__open .skills__list {
+  height: max-content;
+  margin-bottom: var(--m-2-4);
+}
+
+.skills__open .skills__arrow {
+  transform: rotate(-180deg);
 }
 
 /* Qualification */
@@ -869,8 +983,8 @@ button:focus {
     justify-self: center;
   }
   .about__container,
-  .skills__container,
   .portfolio__container,
+  .skills__container,
   .project__container,
   .contact__container,
   .footer__container {
