@@ -775,38 +775,40 @@
                     </div>
                 </div>
 
-                <form action="https://formsubmit.co/najim.sadat27@gmail.com" class="contact__form grid" method="POST">
+                <form action="https://formsubmit.co/najim.sadat27@gmail.com" class="contact__form grid" method="POST"
+                    id="contact__form">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">First name</label>
-                            <input type="text" class="contact__input" required>
+                            <input name="firstname" type="text" class="contact__input" required>
                         </div>
 
                         <div class="contact__content">
                             <label for="" class="contact__label">Last name</label>
-                            <input type="text" class="contact__input" required>
+                            <input name="lastname" type="text" class="contact__input" required>
                         </div>
 
                     </div>
 
                     <div class="contact__content">
                         <label for="" class="contact__label">Email</label>
-                        <input type="email" class="contact__input" required>
+                        <input name="email" type="email" class="contact__input" required>
                     </div>
 
                     <div class="contact__content">
                         <label for="" class="contact__label">Phone</label>
-                        <input type="number" class="contact__input">
+                        <input name="phone" type="number" class="contact__input">
                     </div>
 
                     <div class="contact__content">
                         <label for="" class="contact__label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <textarea name="message" id="textarea" cols="0" rows="7" class="contact__input"></textarea>
                     </div>
 
                     <div>
-                        <a href="#contact" class="button button-flex">
-                            Send Message<i class="uil uil-message button__icon"></i></a>
+                        <button type="submit" class="button button-flex contact__button">
+                            Send Message<i class="uil uil-message button__icon "></i></button>
+
                     </div>
                 </form>
             </div>

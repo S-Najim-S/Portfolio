@@ -405,6 +405,7 @@ button:focus {
 
 .button:hover {
   background-color: var(--primary-color-alt);
+  transform: scale(1.05);
 }
 
 .button__icon {
@@ -427,6 +428,9 @@ button:focus {
 
 .button:active {
   transform: translateY(2px);
+}
+.contact__button {
+  border: none;
 }
 
 /*+++++++++ section about +++++++++*/
