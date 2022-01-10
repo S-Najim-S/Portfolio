@@ -6,9 +6,10 @@
   /* _________Colors____________ */
   /* change color of all the page */
   --hue-color: 223;
-  --primary-color: hsl(var(--hue-color), 74%, 71%);
+  --primary-color: #2a6285;
+  --primary-color-dark: #07283c;
   --primary-color-2: hsl(var(--hue-color), 69%, 61%);
-  --primary-color-alt: hsl(var(--hue-color), 57%, 45%);
+  --primary-color-alt: #3d80aa;
   --secondary--color: hsl(var(--hue-color), 92%, 85%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
@@ -175,10 +176,10 @@ body.dark-theme {
   border-radius: 50%;
   margin-bottom: -0.3rem;
   margin-right: 0.3rem;
-  background-color: #63a4ff;
+  background-color: #2a6285;
   background-image: linear-gradient(
     315deg,
-    var(--primary-color) 0%,
+    #2a6285 0%,
     var(--primary-color-alt) 74%
   );
 }
@@ -439,27 +440,11 @@ button:focus {
   width: 20rem;
   justify-self: center;
   align-self: center;
-  transform: rotate(-47deg);
+  border-radius: 50%;
   margin-bottom: var(--m-3-2);
   margin-top: var(--m-1-6);
   position: relative;
-}
-
-.about__img::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border: 0.25rem solid var(--primary-color);
-  top: 1.5rem;
-  right: -2rem;
-  border-radius: 1.5rem;
-  z-index: -1;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.about__img-photo {
-  border-radius: 1.5rem;
+  box-shadow: rgb(0 0 0 / 24%) 0px -9px 11px;
 }
 
 .about__description {
@@ -543,7 +528,7 @@ button:focus {
   border-radius: 0.25rem;
 }
 .skills__bar {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-dark);
 }
 .skills__percentage {
   display: block;
@@ -997,16 +982,12 @@ button:focus {
   .about__img {
     margin-bottom: 14rem;
     margin-right: 2rem;
+    border-radius: 50%;
   }
   .about__img img {
-    max-width: 95%;
+    max-width: 100%;
   }
-  .about__img::before {
-    content: "";
-    height: 100%;
-    width: 95%;
-    margin-right: 0.5rem;
-  }
+
   .qualification__sections {
     display: grid;
     grid-template-columns: 0.6fr;
