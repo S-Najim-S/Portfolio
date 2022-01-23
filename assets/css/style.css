@@ -8,13 +8,13 @@
   --hue-color: 223;
   --primary-color: #2a6285;
   --primary-color-dark: #07283c;
-  --primary-color-2: hsl(var(--hue-color), 69%, 61%);
+  --primary-color-2: #3b6681;
   --primary-color-alt: #3d80aa;
   --secondary--color: hsl(var(--hue-color), 92%, 85%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 15%, 82%);
-  --input-color: hsl(var(--hue-color), 45%, 83%);
+  --input-color: #b4d4e7;
   --body-color: hsl(var(--hue-color), 70%, 96%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
