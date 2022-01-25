@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -79,7 +81,7 @@
 
     <!-- main -->
     <main class="main">
-        <section class="home" id="home">
+        <section class="home" id="home" data-aos="fade-up" data-aos-anchor-placement="center-center">
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
@@ -128,7 +130,7 @@
             </div>
         </section>
 
-        <section class="about section" id="about">
+        <section class="about section" id="about" data-aos="fade-up" data-aos-anchor-placement="top-center">
             <h2 class="section__title">About Me</h2>
             <span class="section__subtitle about-subtitle">What I do</span>
 
@@ -173,7 +175,7 @@
 
         <!-- ---------------------------Skills--------------------------- -->
 
-        <section class="skills section" id="skills">
+        <section class="skills section" id="skills" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h2 class="section__title">Skills</h2>
             <span class="section__subtitle">My tecnical level</span>
 
@@ -400,7 +402,8 @@
 
         </section>
         <!-- Qualification Section -->
-        <section class="qualification section" id="qualification">
+        <section class="qualification section" id="qualification" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">My journey</span>
 
@@ -579,11 +582,12 @@
             </div>
         </section>
 
-        <section class="portfolio section" id="portfolio">
+        <section class="portfolio section" id="portfolio" data-aos="fade-up" data-aos-duration="3000">
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">Some of my Works</span>
 
-            <div class="portfolio__container container">
+            <div class="portfolio__container container" data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
 
 
                 <div class="portfolio__box">
@@ -695,7 +699,7 @@
             </div>
         </section>
 
-        <section class="project section">
+        <section class="project section" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <div class="project__bg">
                 <div class="project__container container grid">
                     <div class="project__data">
@@ -709,7 +713,7 @@
             </div>
         </section>
 
-        <section class="contact section" id="contact">
+        <section class="contact section" id="contact" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h2 class="section__title">Contact Me</h2>
             <span class="section__subtitle">Get in Touch</span>
 
@@ -827,6 +831,10 @@
     <a href="#" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scrollup-icon"></i>
     </a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

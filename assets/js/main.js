@@ -164,19 +164,3 @@ skillsHeader.forEach((el) => {
 });
 
 // ------------------Scroll Reveal
-
-const sr = ScrollReveal({
-  origin: "top",
-  distance: "60px",
-  duration: 2500,
-  delay: 100,
-  // reset: true
-});
-sr.reveal(".home, .skills ,.section__title, .section__subtitle ");
-sr.reveal(
-  ".about, .qualification, .footer__links, .footer__socials,.footer__subtitle, .footer__title, .footer__copy",
-  { interval: 100 }
-);
-sr.reveal("");
-sr.reveal(".about__img, .portfolio, .contact__info-left", { origin: "left" });
-sr.reveal(".about__data, .project, .contact__form ", { origin: "right" });
